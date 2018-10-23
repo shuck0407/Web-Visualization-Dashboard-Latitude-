@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+        <meta charset="UTF-8">
+        <title>Temperature</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Cloud.ico" />
+
+</head>
+
+<body>
+   <!--Navigation Bar-->
+   <nav class="navbar navbar-expand navbar-light" style="background-color: #e3f2fd;">
+        <!-- Navbar Container -->
+        <div class="container-fluid">
+
+        <!-- Navbar Header [contains both toggle button and navbar brand] -->    
+        <div class="navbar-header">
+            <!-- Toggle Button [handles opening navbar components on mobile screens]-->
+            <button type="button" class="navbar-toggle collapsed btn btn-default btn-md" data-toggle="collapse" data-target="#who-knows" aria-expanded="false">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </button>
+            <!-- Navbar Brand - Latitude-->
+            <a class="navbar-brand" href="landing-page.html">Latitude</a>
+        </div>
+        <!-- Navbar Collapse [contains navbar components such as navbar menu and forms ] -->
+        <div class="collapse navbar-collapse" id="who-knows">
+
+            <!-- Navbar Menu -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            <span class="caret"></span></a>
+                
+                    <ul class="dropdown-menu">
+                        <li><a href="MaxTemp.html">Latitude vs. Max Temperature</a></li>
+                        <li><a href="Humidity.html">Latitude vs. Humidity</a></li>
+                        <li><a href="Cloudiness.html">Latitude vs. Cloudiness</a></li>
+                        <li><a href="WindSpeed.html">Latitude vs. Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+     <!--Main Container-->
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="box">
+                            <h2 >Maximum Temperature</h2>
+                            <hr>
+                            <img class="center-block" src="Latitude_Vs_Temp.png" width="65%" height="65%">
+                            <p>Temperatures rise as you approach the equator for cities in both the northern and southern hemispheres. 
+                                This graph shows temperatures around the time of the September equinox (Sept. 22, 2018), 
+                                which means that the earth's tilt is perpendicular to the sun, so neither the northern or 
+                                southern hemisphere is tilted more toward the sun. Therefore, maximum temperatures should be 
+                                about equal between the cities in the northern and southern hemisphere and one shouldn't be 
+                                significantly warmer than the other. The graph shows that this is true.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="box">
+                                <h3>Visualizations</h3>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6"> 
+                                            <figure class="figure">  
+                                                <a href="MaxTemp.html"><img src="Latitude_Vs_Temp.png" class="figure-img img-fluid rounded"
+                                                     width="90%" height="90%" alt="Temperature"></a>
+                                                 <figcaption class="figure-caption text-center">Temperature</figcaption>
+                                            </figure> 
+                                        </div>
+                                   
+                                        <div class="col-md-6">  
+                                            <figure class="figure"> 
+                                            <a href="Humidity.html"><img src="Latitude_Vs_Humidity.png" class="figure-img img-fluid rounded" 
+                                                width="90%" height="90%" alt="Humidity"></a>
+                                                <figcaption class="figure-caption text-center">Humidity</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>   
+                                    <div class ="row"> 
+                                        <div class="col-md-6">  
+                                            <figure class="figure"> 
+                                            <a href="Cloudiness.html"><img src="Latitude_Vs_Cloudiness.png" class="figure-img img-fluid rounded" 
+                                                width="90%" height="90%" alt="Cloudiness"></a>
+                                                <figcaption class="figure-caption text-center">Cloudiness</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6">  
+                                            <figure class="figure">  
+                                            <a href="WindSpeed.html"><img src="Latitude_Vs_WindSpeed.png" class="figure-img img-fluid rounded"
+                                                width="90%" height="90%" alt="Wind Speed"></a>
+                                                <figcaption class="figure-caption text-center">Wind Speed</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>  
+                        </div>
+                        </div>         
+                </div>
+        </div>
+    </body>
+</html>
